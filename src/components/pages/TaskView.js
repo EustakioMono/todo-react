@@ -1,22 +1,14 @@
 import React from 'react';
-import TaskList from '../organisms/TaskList';
-import Title from '../atoms/Title'
 
-const dataArr = [
-  {
-    title: 'firsTask',
-    done: false,
-  },
-  {
-    title: 'sencondTask',
-    done: true,
-  }
-]
+import TaskList from '../organisms/TaskList';
+import AddTask from '../organisms/AddTask';
+import Title from '../atoms/Title';
 
 const TaskView = () =>( 
-  <React.Fragment> 
+  <React.Fragment>
     <Title>Today on... today's taks...</Title>
-    <TaskList tasks={dataArr}/>
+    <AddTask/>
+    <TaskList/>
   </React.Fragment>
   )
 
